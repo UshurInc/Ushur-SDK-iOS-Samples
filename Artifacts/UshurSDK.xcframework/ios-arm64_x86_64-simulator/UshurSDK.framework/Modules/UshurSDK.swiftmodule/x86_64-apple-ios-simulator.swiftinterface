@@ -1,0 +1,32 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UshurSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_exported import UshurSDK
+import _Concurrency
+import _StringProcessing
+public protocol ResponseDelegate {
+  func didGetResponse(result: UshurSDK.Results)
+  func didHaveInvalidInput(errorMessage: Swift.String)
+  func invalidImageSizeIndex(indexOfImage: Swift.Int)
+}
+public class Ushur {
+  public var delegate: (any UshurSDK.ResponseDelegate)? {
+    get
+    set
+  }
+  public init()
+  public func processDocument(imageDataArray: [Foundation.Data], emailServiceId: Swift.String, emailSubject: Swift.String, emailBody: Swift.String, replyTo: Swift.String, tokenId: Swift.String, UeTag: Swift.String)
+  @objc deinit
+}
+public struct Response {
+  public var response: Foundation.URLResponse?
+  public var httpStatusCode: Swift.Int
+}
+public struct Results {
+  public var data: Foundation.Data?
+  public var response: UshurSDK.Response?
+  public var error: (any Swift.Error)?
+}

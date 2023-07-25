@@ -1,0 +1,6 @@
+framework module Pods_UshurSDKDemo {
+  umbrella header "Pods-UshurSDKDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

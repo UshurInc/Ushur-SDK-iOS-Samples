@@ -1,0 +1,11 @@
+framework module UshurSDK {
+  umbrella header "UshurSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module UshurSDK.Swift {
+  header "UshurSDK-Swift.h"
+  requires objc
+}

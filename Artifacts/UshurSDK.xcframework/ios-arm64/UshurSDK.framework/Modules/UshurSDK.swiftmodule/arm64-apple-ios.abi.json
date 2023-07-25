@@ -1,0 +1,1846 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ResponseDelegate",
+        "printedName": "ResponseDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didGetResponse",
+            "printedName": "didGetResponse(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Results",
+                "printedName": "UshurSDK.Results",
+                "usr": "s:8UshurSDK7ResultsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8UshurSDK16ResponseDelegateP06didGetC06resultyAA7ResultsV_tF",
+            "mangledName": "$s8UshurSDK16ResponseDelegateP06didGetC06resultyAA7ResultsV_tF",
+            "moduleName": "UshurSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UshurSDK.ResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : UshurSDK.ResponseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didHaveInvalidInput",
+            "printedName": "didHaveInvalidInput(errorMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8UshurSDK16ResponseDelegateP19didHaveInvalidInput12errorMessageySS_tF",
+            "mangledName": "$s8UshurSDK16ResponseDelegateP19didHaveInvalidInput12errorMessageySS_tF",
+            "moduleName": "UshurSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UshurSDK.ResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : UshurSDK.ResponseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidImageSizeIndex",
+            "printedName": "invalidImageSizeIndex(indexOfImage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8UshurSDK16ResponseDelegateP21invalidImageSizeIndex07indexOfF0ySi_tF",
+            "mangledName": "$s8UshurSDK16ResponseDelegateP21invalidImageSizeIndex07indexOfF0ySi_tF",
+            "moduleName": "UshurSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : UshurSDK.ResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : UshurSDK.ResponseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8UshurSDK16ResponseDelegateP",
+        "mangledName": "$s8UshurSDK16ResponseDelegateP",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Ushur",
+        "printedName": "Ushur",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UshurSDK.ResponseDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseDelegate",
+                    "printedName": "UshurSDK.ResponseDelegate",
+                    "usr": "s:8UshurSDK16ResponseDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvp",
+            "mangledName": "$s8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UshurSDK.ResponseDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseDelegate",
+                        "printedName": "UshurSDK.ResponseDelegate",
+                        "usr": "s:8UshurSDK16ResponseDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvg",
+                "mangledName": "$s8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UshurSDK.ResponseDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseDelegate",
+                        "printedName": "UshurSDK.ResponseDelegate",
+                        "usr": "s:8UshurSDK16ResponseDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvs",
+                "mangledName": "$s8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvM",
+                "mangledName": "$s8UshurSDK0A0C8delegateAA16ResponseDelegate_pSgvM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Ushur",
+                "printedName": "UshurSDK.Ushur",
+                "usr": "s:8UshurSDK0A0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8UshurSDK0A0CACycfc",
+            "mangledName": "$s8UshurSDK0A0CACycfc",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "processDocument",
+            "printedName": "processDocument(imageDataArray:emailServiceId:emailSubject:emailBody:replyTo:tokenId:UeTag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.Data]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8UshurSDK0A0C15processDocument14imageDataArray14emailServiceId0H7Subject0H4Body7replyTo05tokenJ05UeTagySay10Foundation0F0VG_S6StF",
+            "mangledName": "$s8UshurSDK0A0C15processDocument14imageDataArray14emailServiceId0H7Subject0H4Body7replyTo05tokenJ05UeTagySay10Foundation0F0VG_S6StF",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8UshurSDK0A0C",
+        "mangledName": "$s8UshurSDK0A0C",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Response",
+        "printedName": "Response",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "response",
+            "printedName": "response",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvp",
+            "mangledName": "$s8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvg",
+                "mangledName": "$s8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvs",
+                "mangledName": "$s8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvM",
+                "mangledName": "$s8UshurSDK8ResponseV8responseSo13NSURLResponseCSgvM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpStatusCode",
+            "printedName": "httpStatusCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK8ResponseV14httpStatusCodeSivp",
+            "mangledName": "$s8UshurSDK8ResponseV14httpStatusCodeSivp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV14httpStatusCodeSivg",
+                "mangledName": "$s8UshurSDK8ResponseV14httpStatusCodeSivg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV14httpStatusCodeSivs",
+                "mangledName": "$s8UshurSDK8ResponseV14httpStatusCodeSivs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK8ResponseV14httpStatusCodeSivM",
+                "mangledName": "$s8UshurSDK8ResponseV14httpStatusCodeSivM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8UshurSDK8ResponseV",
+        "mangledName": "$s8UshurSDK8ResponseV",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Results",
+        "printedName": "Results",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK7ResultsV4data10Foundation4DataVSgvp",
+            "mangledName": "$s8UshurSDK7ResultsV4data10Foundation4DataVSgvp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV4data10Foundation4DataVSgvg",
+                "mangledName": "$s8UshurSDK7ResultsV4data10Foundation4DataVSgvg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV4data10Foundation4DataVSgvs",
+                "mangledName": "$s8UshurSDK7ResultsV4data10Foundation4DataVSgvs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV4data10Foundation4DataVSgvM",
+                "mangledName": "$s8UshurSDK7ResultsV4data10Foundation4DataVSgvM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "response",
+            "printedName": "response",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UshurSDK.Response?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Response",
+                    "printedName": "UshurSDK.Response",
+                    "usr": "s:8UshurSDK8ResponseV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK7ResultsV8responseAA8ResponseVSgvp",
+            "mangledName": "$s8UshurSDK7ResultsV8responseAA8ResponseVSgvp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UshurSDK.Response?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "UshurSDK.Response",
+                        "usr": "s:8UshurSDK8ResponseV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV8responseAA8ResponseVSgvg",
+                "mangledName": "$s8UshurSDK7ResultsV8responseAA8ResponseVSgvg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UshurSDK.Response?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "UshurSDK.Response",
+                        "usr": "s:8UshurSDK8ResponseV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV8responseAA8ResponseVSgvs",
+                "mangledName": "$s8UshurSDK7ResultsV8responseAA8ResponseVSgvs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV8responseAA8ResponseVSgvM",
+                "mangledName": "$s8UshurSDK7ResultsV8responseAA8ResponseVSgvM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8UshurSDK7ResultsV5errors5Error_pSgvp",
+            "mangledName": "$s8UshurSDK7ResultsV5errors5Error_pSgvp",
+            "moduleName": "UshurSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV5errors5Error_pSgvg",
+                "mangledName": "$s8UshurSDK7ResultsV5errors5Error_pSgvg",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV5errors5Error_pSgvs",
+                "mangledName": "$s8UshurSDK7ResultsV5errors5Error_pSgvs",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8UshurSDK7ResultsV5errors5Error_pSgvM",
+                "mangledName": "$s8UshurSDK7ResultsV5errors5Error_pSgvM",
+                "moduleName": "UshurSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8UshurSDK7ResultsV",
+        "mangledName": "$s8UshurSDK7ResultsV",
+        "moduleName": "UshurSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 256,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 297,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1016,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1284,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1305,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1347,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1551,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1706,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1909,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2106,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2306,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2454,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2499,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2660,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "StringLiteral",
+      "offset": 3045,
+      "length": 31,
+      "value": "\"Boundary-\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "StringLiteral",
+      "offset": 3075,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "StringLiteral",
+      "offset": 3206,
+      "length": 34,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "StringLiteral",
+      "offset": 3228,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/RequestClass.swift",
+      "kind": "StringLiteral",
+      "offset": 3239,
+      "length": 31,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 48,
+      "value": "\"https:\/\/goodrx.ushur.me\/infoQuery\/getVariables\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 41,
+      "value": "\"https:\/\/goodrx.ushur.me\/onIncomingEmail\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 65,
+      "value": "\"SUCCESS: Email submitted for Data Extraction and Categorization\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 430,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 11,
+      "value": "\"requestId\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 9,
+      "value": "\"tokenId\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 7,
+      "value": "\"UeTag\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 582,
+      "length": 11,
+      "value": "\"filterCmd\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 32,
+      "value": "\"multipart\/form-data; boundary=\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 732,
+      "length": 13,
+      "value": "\"apiResponse\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 773,
+      "length": 18,
+      "value": "\"uniqueIncEmailId\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 16,
+      "value": "\"emailServiceId\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 877,
+      "length": 14,
+      "value": "\"emailSubject\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 922,
+      "length": 11,
+      "value": "\"emailBody\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 962,
+      "length": 9,
+      "value": "\"replyTo\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 999,
+      "length": 8,
+      "value": "\"apiVer\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 5,
+      "value": "\"3.2\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1102,
+      "length": 14,
+      "value": "\"totalRecords\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1141,
+      "length": 8,
+      "value": "\"counts\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1211,
+      "length": 82,
+      "value": "\"The number of images exceeds the maximum allowed limit. Please limit to 5 images\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1331,
+      "length": 34,
+      "value": "\"Email serviceID can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1401,
+      "length": 32,
+      "value": "\"Email subject can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 29,
+      "value": "\"Email body can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1531,
+      "length": 35,
+      "value": "\"Reply to emailId can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1597,
+      "length": 27,
+      "value": "\"Token Id can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1653,
+      "length": 24,
+      "value": "\"UeTag can not be blank\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1714,
+      "length": 61,
+      "value": "\"Sorry, something went wrong. Please contact GoodRx support.\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1810,
+      "length": 39,
+      "value": "\"Operation timed out. Please try again\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1887,
+      "length": 61,
+      "value": "\"The image size is too large. Please upload a smaller image.\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1988,
+      "length": 77,
+      "value": "\"Image size is too small. Consider using a larger image for optimal viewing.\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 2108,
+      "length": 74,
+      "value": "\"Total image size exceeds limit. Remove or reduce image sizes to proceed.\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2244,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2284,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2322,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2354,
+      "length": 4,
+      "value": "0.75"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2397,
+      "length": 4,
+      "value": "50.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2436,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2481,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Constants\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 2517,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "StringLiteral",
+      "offset": 3260,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5654,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6005,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6087,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6129,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "FloatLiteral",
+      "offset": 6369,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6595,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "FloatLiteral",
+      "offset": 6661,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6893,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "FloatLiteral",
+      "offset": 6971,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7126,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Ushur.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7157,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/RestEntity.swift",
+      "kind": "Dictionary",
+      "offset": 124,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "Array",
+      "offset": 229,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 695,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 852,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 921,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 928,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 997,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1004,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1011,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Utils\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1065,
+      "length": 6,
+      "value": "\"%.2f\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1704,
+      "length": 6,
+      "value": "\"\r\n\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1802,
+      "length": 27,
+      "value": "\"--\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1828,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 73,
+      "value": "\"Content-Disposition: form-data; name=\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1901,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1927,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1975,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2108,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
+      "length": 27,
+      "value": "\"--\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2175,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2206,
+      "length": 101,
+      "value": "\"Content-Disposition: form-data; name=\"Attachment\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2264,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2266,
+      "length": 1,
+      "value": "\"\"; filename=\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2288,
+      "length": 1,
+      "value": "\".jpg\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2306,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2337,
+      "length": 50,
+      "value": "\"Content-Type: image\/jpeg\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2386,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2516,
+      "length": 29,
+      "value": "\"--\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2530,
+      "length": 2,
+      "value": "\"--\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2544,
+      "length": 35,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2756,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2847,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3502,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3579,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3847,
+      "length": 35,
+      "value": "\"application\/x-www-form-urlencoded\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3952,
+      "length": 96,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3958,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4047,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4069,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5269,
+      "length": 40,
+      "value": "\"Unable to create the URLRequest object\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Managers\/RestManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5320,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/ImageValue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 348,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/ImageValue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 354,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/ImageValue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 361,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/ImageValue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 507,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/ImageValue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 514,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "IntegerLiteral",
+      "offset": 161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 601,
+      "length": 8,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_STUFF\/iOS_SDK\/UshurSDK\/Models\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 608,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
