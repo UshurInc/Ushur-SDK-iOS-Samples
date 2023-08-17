@@ -8,7 +8,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 public protocol ResponseDelegate {
-  func didGetResponse(result: UshurSDK.Results)
+  func didGetResponse(result: Foundation.Data?)
   func didHaveInvalidInput(errorMessage: Swift.String)
   func invalidImageSizeIndex(indexOfImage: Swift.Int)
 }
@@ -18,7 +18,7 @@ public class Ushur {
     set
   }
   public init()
-  public func processDocument(imageDataArray: [Foundation.Data], emailServiceId: Swift.String, emailSubject: Swift.String, emailBody: Swift.String, replyTo: Swift.String, tokenId: Swift.String, UeTag: Swift.String)
+  public func processDocument(imageDataArray: [Foundation.Data], config: UshurSDK.ConfigsEnum)
   @objc deinit
 }
 public struct Response {
@@ -30,3 +30,15 @@ public struct Results {
   public var response: UshurSDK.Response?
   public var error: (any Swift.Error)?
 }
+public enum ConfigsEnum {
+  case InsuranceCard
+  case PillBox
+  case MedicineCabinet
+  public static func == (a: UshurSDK.ConfigsEnum, b: UshurSDK.ConfigsEnum) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UshurSDK.ConfigsEnum : Swift.Equatable {}
+extension UshurSDK.ConfigsEnum : Swift.Hashable {}

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ushursdk-ios-samples",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/UshurInc/UshurSDK-iOS-Samples.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "08b9f3308bf7150b893b60d228b4707439a63920"
+      }
+    }
+  ],
+  "version" : 2
+}

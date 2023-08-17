@@ -42,15 +42,8 @@ Once you pass the delegate then you need to implement the functions of the deleg
 
 Then when ever we need to call the UshurSDK then you need to call the following function -
 
-![Screenshot 2023-06-12 at 2 00 51 PM](https://github.com/UshurInc/UshurSDK-iOS-Samples/assets/83643420/23ae59a1-bd8d-47d0-b3aa-a4f80bc841f8)
-
     processDocument(imageDataArray: [Data],
-                                       emailServiceId: String,
-                                       emailSubject: String,
-                                       emailBody: String,
-                                       replyTo: String,
-                                       tokenId: String,
-                                       UeTag: String) 
+                                       config: ConfigsEnum) 
 
 In this function you need to pass the following data -
 
@@ -58,23 +51,21 @@ Parameters:
 
  1. imageDataArray: Array of the data. Convert image into the data and without compressing the image quality.
 
- 2. emailServiceId: Email pull keyword to trigger the UshurSDK workflow.
+ 2. config: Provided by UshurSDK.
 
- 3. emailSubject: Need to pass Email Subject here.
+    a. For the Insurance Card Use Case ==>
+    processDocument(imageDataArray: imageData, config: .InsuranceCard)
+    
+    b. For the Pill Bottle Use Case ==>
+processDocument(imageDataArray: imageData, config: .PillBox)
 
- 4. emailBody: Need to pass Email Body here.
 
- 5. replyTo: Sender's email address needs to be passed here so that if in case UshurSDK wants to reply back to the sender, we will get it from this field.
-
- 6. tokenId: Provided by UshurSDK.
-
- 7. UeTag: Provided by UshurSDK.
    
-Returns: This function will not return any data, but it will provide the output via 
-## delegate functions didGetResponse(result: Results) 
+Returns: This function will return any data, but it will provide the output via 
+## delegate functions didGetResponse(result: Data) 
 or if any error encountered it will return through 
 ## didHaveInvalidInput(errorMessage: String)
-or if any image is larger or smaller in size then the valid size it will return through 
+or if any image is larger or smaller in size then the valid size it will return through this parameter
 ## invalidImageSizeIndex(indexOfImage: Int)
 
 ## Reporting Events
