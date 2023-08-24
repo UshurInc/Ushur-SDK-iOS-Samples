@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD81FE42A96075F001223EF /* UshurSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD81FE32A96075F001223EF /* UshurSDK */; };
 		1F0CBFB82A6E9BEB00C9ED48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CBFB72A6E9BEB00C9ED48 /* AppDelegate.swift */; };
 		1F0CBFBA2A6E9BEB00C9ED48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CBFB92A6E9BEB00C9ED48 /* SceneDelegate.swift */; };
 		1F0CBFBC2A6E9BEB00C9ED48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CBFBB2A6E9BEB00C9ED48 /* ViewController.swift */; };
@@ -17,7 +18,6 @@
 		1F0CBFD02A6EA8C800C9ED48 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CBFCE2A6EA8C800C9ED48 /* ImageCollectionViewCell.swift */; };
 		1F0CBFD12A6EA8C800C9ED48 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0CBFCF2A6EA8C800C9ED48 /* ImageCollectionViewCell.xib */; };
 		1FD5B57C2A6F971E00AF46E5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5B57B2A6F971E00AF46E5 /* ImagePicker.swift */; };
-		E8A4AA9E2A8DFA7D00950DBA /* UshurSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E8A4AA9D2A8DFA7D00950DBA /* UshurSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,18 +53,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A4AA9E2A8DFA7D00950DBA /* UshurSDK in Frameworks */,
+				1BD81FE42A96075F001223EF /* UshurSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B41DB282A9393F200E0A2AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F0CBFAB2A6E9BEB00C9ED48 = {
 			isa = PBXGroup;
 			children = (
 				1F0CBFB62A6E9BEB00C9ED48 /* ushur_sdk_demo */,
 				1F0CBFB52A6E9BEB00C9ED48 /* Products */,
+				1B41DB282A9393F200E0A2AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +120,7 @@
 			);
 			name = ushur_sdk_demo;
 			packageProductDependencies = (
-				E8A4AA9D2A8DFA7D00950DBA /* UshurSDK */,
+				1BD81FE32A96075F001223EF /* UshurSDK */,
 			);
 			productName = ushur_sdk_demo;
 			productReference = 1F0CBFB42A6E9BEB00C9ED48 /* ushur_sdk_demo.app */;
@@ -143,7 +151,7 @@
 			);
 			mainGroup = 1F0CBFAB2A6E9BEB00C9ED48;
 			packageReferences = (
-				E8A4AA9C2A8DFA7D00950DBA /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */,
+				1BD81FE22A96075F001223EF /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */,
 			);
 			productRefGroup = 1F0CBFB52A6E9BEB00C9ED48 /* Products */;
 			projectDirPath = "";
@@ -344,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unikwork.ushur-sdk-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ushur.ios-sdk-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -381,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unikwork.ushur-sdk-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ushur.ios-sdk-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -417,7 +425,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E8A4AA9C2A8DFA7D00950DBA /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */ = {
+		1BD81FE22A96075F001223EF /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/UshurInc/UshurSDK-iOS-Samples.git";
 			requirement = {
@@ -428,9 +436,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E8A4AA9D2A8DFA7D00950DBA /* UshurSDK */ = {
+		1BD81FE32A96075F001223EF /* UshurSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8A4AA9C2A8DFA7D00950DBA /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */;
+			package = 1BD81FE22A96075F001223EF /* XCRemoteSwiftPackageReference "UshurSDK-iOS-Samples" */;
 			productName = UshurSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

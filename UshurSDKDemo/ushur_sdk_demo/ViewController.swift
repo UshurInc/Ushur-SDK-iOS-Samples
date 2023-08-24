@@ -86,13 +86,12 @@ class ViewController: UIViewController {
         var imageData = [Data]()
         for item in imageArray{
             if let imgData = item.jpegData(compressionQuality: 1.0){
-                print(imgData.count)
+//                print(imgData.count)
                 imageData.append(imgData)
             }else{
-                print("Invalid image size")
+//                print("Invalid image size")
             }
         }
-        print(imageData)
         ushur.processDocument(imageDataArray: imageData, config: .InsuranceCard)
         imageArray.removeAll()
         self.imagesCollectionView.reloadData()
@@ -105,13 +104,12 @@ class ViewController: UIViewController {
         var imageData = [Data]()
         for item in imageArray{
             if let imgData = item.jpegData(compressionQuality: 1.0){
-                print(imgData.count)
+//                print(imgData.count)
                 imageData.append(imgData)
             }else{
                 print("Invalid image size")
             }
         }
-        print(imageData)
         ushur.processDocument(imageDataArray: imageData, config: .PillBox)
         imageArray.removeAll()
         self.imagesCollectionView.reloadData()
@@ -178,7 +176,7 @@ extension ViewController: ImagePickerDelegate {
     
     func cancelButtonDidClick(on imageView: ImagePicker) {
         imagePicker.dismiss()
-        print("Cancel button Action")
+//        print("Cancel button Action")
     }
     
 }
@@ -193,9 +191,7 @@ extension ViewController: ResponseDelegate{
             do{
                 // Print show all result inside alert
                 if let json = try JSONSerialization.jsonObject(with: finalData,options: []) as? [String: Any]{
-                    print("API Response JSON :: ", json)
                     let convertedString = String(data: finalData, encoding: .utf8) // the data will be converted to the string
-
                     DispatchQueue.main.async {
                         self.showAlert(title: "Api Response", message: convertedString ?? "")
                     }
@@ -205,8 +201,10 @@ extension ViewController: ResponseDelegate{
                     }
                 }
             }catch{
+                let convertedString = String(data: finalData, encoding: .utf8) // the data will be converted to the string
+
                 DispatchQueue.main.async {
-                    self.showAlert(title: "Error", message: error.localizedDescription)
+                    self.showAlert(title: "Error", message: convertedString ?? "")
                 }
                 print(error.localizedDescription)
             }
@@ -224,14 +222,14 @@ extension ViewController: ResponseDelegate{
         DispatchQueue.main.async {
             self.showAlert(title: "Error", message: errorMessage)
         }
-        print("Error message: \(errorMessage)")
+//        print("Error message: \(errorMessage)")
     }
     
     func invalidImageSizeIndex(indexOfImage: Int) {
         DispatchQueue.main.async {
             self.hideActivityIndicator()
         }
-        print("Invalid images:",indexOfImage)
+//        print("Invalid images:",indexOfImage)
     }
     
     

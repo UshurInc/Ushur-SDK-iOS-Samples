@@ -107,7 +107,7 @@ extension ImagePicker: UIImagePickerControllerDelegate {
         if let image = info[.originalImage] as? UIImage {
             delegate?.imagePicker(self, didSelect: image)
         } else {
-            print("Other source")
+//            print("Other source")
         }
     }
 
@@ -115,4 +115,3 @@ extension ImagePicker: UIImagePickerControllerDelegate {
         delegate?.cancelButtonDidClick(on: self)
     }
 }
-

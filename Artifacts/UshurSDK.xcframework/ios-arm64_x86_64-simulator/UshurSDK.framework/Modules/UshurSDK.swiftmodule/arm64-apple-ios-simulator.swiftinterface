@@ -2,16 +2,149 @@
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UshurSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import Dispatch
 import Foundation
 import Swift
+import UIKit
 @_exported import UshurSDK
+import Vision
 import _Concurrency
 import _StringProcessing
+@_hasMissingDesignatedInitializers open class SwiftyBeaver {
+  public static let version: Swift.String
+  public static let build: Swift.Int
+  public enum Level : Swift.Int {
+    case verbose
+    case debug
+    case info
+    case warning
+    case error
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static var destinations: Swift.Set<UshurSDK.BaseDestination> {
+    get
+  }
+  @discardableResult
+  open class func addDestination(_ destination: UshurSDK.BaseDestination) -> Swift.Bool
+  @discardableResult
+  open class func removeDestination(_ destination: UshurSDK.BaseDestination) -> Swift.Bool
+  open class func removeAllDestinations()
+  open class func countDestinations() -> Swift.Int
+  open class func threadName() -> Swift.String
+  open class func verbose(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  open class func debug(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  open class func info(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  open class func warning(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  open class func error(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  open class func custom(level: UshurSDK.SwiftyBeaver.Level, message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: Any? = nil)
+  public class func flush(secondTimeout: Swift.Int64) -> Swift.Bool
+  @objc deinit
+}
+open class FileDestination : UshurSDK.BaseDestination {
+  public var logFileURL: Foundation.URL?
+  public var syncAfterEachWrite: Swift.Bool
+  public var colored: Swift.Bool {
+    get
+    set
+  }
+  public var logFileMaxSize: (Swift.Int)
+  public var logFileAmount: Swift.Int
+  override public var defaultHashValue: Swift.Int {
+    get
+  }
+  public init(logFileURL: Foundation.URL? = nil)
+  override open func send(_ level: UshurSDK.SwiftyBeaver.Level, msg: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int, context: Any? = nil) -> Swift.String?
+  public func deleteLogFile() -> Swift.Bool
+  @objc deinit
+}
 public protocol ResponseDelegate {
   func didGetResponse(result: Foundation.Data?)
   func didHaveInvalidInput(errorMessage: Swift.String)
   func invalidImageSizeIndex(indexOfImage: Swift.Int)
 }
+final public class GoogleCloudDestination : UshurSDK.BaseDestination {
+  public init(serviceName: Swift.String)
+  override final public var asynchronously: Swift.Bool {
+    get
+    set
+  }
+  override final public func send(_ level: UshurSDK.SwiftyBeaver.Level, msg: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int, context: Any? = nil) -> Swift.String?
+  @objc deinit
+}
+public protocol FilterType : AnyObject {
+  func apply(_ value: Swift.String?) -> Swift.Bool
+  func getTarget() -> UshurSDK.Filter.TargetType
+  func isRequired() -> Swift.Bool
+  func isExcluded() -> Swift.Bool
+  func reachedMinLevel(_ level: UshurSDK.SwiftyBeaver.Level) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class Filters {
+  public static let Path: UshurSDK.PathFilterFactory.Type
+  public static let Function: UshurSDK.FunctionFilterFactory.Type
+  public static let Message: UshurSDK.MessageFilterFactory.Type
+  @objc deinit
+}
+public class Filter {
+  public enum TargetType {
+    case Path(UshurSDK.Filter.ComparisonType)
+    case Function(UshurSDK.Filter.ComparisonType)
+    case Message(UshurSDK.Filter.ComparisonType)
+  }
+  public enum ComparisonType {
+    case StartsWith([Swift.String], Swift.Bool)
+    case Contains([Swift.String], Swift.Bool)
+    case Excludes([Swift.String], Swift.Bool)
+    case EndsWith([Swift.String], Swift.Bool)
+    case Equals([Swift.String], Swift.Bool)
+    case Custom((Swift.String) -> Swift.Bool)
+  }
+  public init(_ target: UshurSDK.Filter.TargetType, required: Swift.Bool, minLevel: UshurSDK.SwiftyBeaver.Level)
+  public func getTarget() -> UshurSDK.Filter.TargetType
+  public func isRequired() -> Swift.Bool
+  public func isExcluded() -> Swift.Bool
+  public func reachedMinLevel(_ level: UshurSDK.SwiftyBeaver.Level) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CompareFilter : UshurSDK.Filter, UshurSDK.FilterType {
+  override public init(_ target: UshurSDK.Filter.TargetType, required: Swift.Bool, minLevel: UshurSDK.SwiftyBeaver.Level)
+  public func apply(_ value: Swift.String?) -> Swift.Bool
+  override public func isExcluded() -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FunctionFilterFactory {
+  public static func startsWith(_ prefixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func contains(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func excludes(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func endsWith(_ suffixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func equals(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func custom(required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (Swift.String) -> Swift.Bool) -> any UshurSDK.FilterType
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MessageFilterFactory {
+  public static func startsWith(_ prefixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func contains(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func excludes(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func endsWith(_ suffixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func equals(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func custom(required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (Swift.String) -> Swift.Bool) -> any UshurSDK.FilterType
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PathFilterFactory {
+  public static func startsWith(_ prefixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func contains(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func excludes(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func endsWith(_ suffixes: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func equals(_ strings: Swift.String..., caseSensitive: Swift.Bool = false, required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose) -> any UshurSDK.FilterType
+  public static func custom(required: Swift.Bool = false, minLevel: UshurSDK.SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (Swift.String) -> Swift.Bool) -> any UshurSDK.FilterType
+  @objc deinit
+}
+extension UshurSDK.Filter.TargetType : Swift.Equatable {
+}
+public func == (lhs: UshurSDK.Filter.TargetType, rhs: UshurSDK.Filter.TargetType) -> Swift.Bool
 public class Ushur {
   public var delegate: (any UshurSDK.ResponseDelegate)? {
     get
@@ -24,6 +157,19 @@ public class Ushur {
 public struct Response {
   public var response: Foundation.URLResponse?
   public var httpStatusCode: Swift.Int
+}
+@_inheritsConvenienceInitializers open class ConsoleDestination : UshurSDK.BaseDestination {
+  public var useNSLog: Swift.Bool
+  public var useTerminalColors: Swift.Bool {
+    get
+    set
+  }
+  override public var defaultHashValue: Swift.Int {
+    get
+  }
+  override public init()
+  override open func send(_ level: UshurSDK.SwiftyBeaver.Level, msg: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int, context: Any? = nil) -> Swift.String?
+  @objc deinit
 }
 public struct Results {
   public var data: Foundation.Data?
@@ -40,5 +186,45 @@ public enum ConfigsEnum {
     get
   }
 }
+open class BaseDestination : Swift.Hashable, Swift.Equatable {
+  open var format: Swift.String
+  open var asynchronously: Swift.Bool
+  open var minLevel: UshurSDK.SwiftyBeaver.Level
+  open var levelString: UshurSDK.BaseDestination.LevelString
+  open var levelColor: UshurSDK.BaseDestination.LevelColor
+  open var calendar: Foundation.Calendar
+  public struct LevelString {
+    public var verbose: Swift.String
+    public var debug: Swift.String
+    public var info: Swift.String
+    public var warning: Swift.String
+    public var error: Swift.String
+  }
+  public struct LevelColor {
+    public var verbose: Swift.String
+    public var debug: Swift.String
+    public var info: Swift.String
+    public var warning: Swift.String
+    public var error: Swift.String
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  open var defaultHashValue: Swift.Int {
+    get
+  }
+  public init()
+  open func send(_ level: UshurSDK.SwiftyBeaver.Level, msg: Swift.String, thread: Swift.String, file: Swift.String, function: Swift.String, line: Swift.Int, context: Any? = nil) -> Swift.String?
+  public func execute(synchronously: Swift.Bool, block: @escaping () -> Swift.Void)
+  public func executeSynchronously<T>(block: @escaping () throws -> T) rethrows -> T
+  public func addFilter(_ filter: any UshurSDK.FilterType)
+  public func removeFilter(_ filter: any UshurSDK.FilterType)
+  @objc deinit
+  open var hashValue: Swift.Int {
+    get
+  }
+}
+public func == (lhs: UshurSDK.BaseDestination, rhs: UshurSDK.BaseDestination) -> Swift.Bool
+extension UshurSDK.SwiftyBeaver.Level : Swift.Equatable {}
+extension UshurSDK.SwiftyBeaver.Level : Swift.Hashable {}
+extension UshurSDK.SwiftyBeaver.Level : Swift.RawRepresentable {}
 extension UshurSDK.ConfigsEnum : Swift.Equatable {}
 extension UshurSDK.ConfigsEnum : Swift.Hashable {}
