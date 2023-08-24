@@ -8332,175 +8332,175 @@
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 2049,
+      "offset": 2100,
       "length": 43,
       "value": "\"GetInfoQuery JSON Response :: \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 2312,
+      "offset": 2385,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "BooleanLiteral",
-      "offset": 2451,
+      "offset": 2524,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 2715,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 2839,
+      "offset": 2912,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 3834,
+      "offset": 3907,
       "length": 31,
       "value": "\"Boundary-\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 3864,
+      "offset": 3937,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4068,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 4017,
+      "offset": 4090,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4101,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 4310,
+      "offset": 4383,
       "length": 20,
       "value": "\"Start-Upload-Image\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 4614,
+      "offset": 4687,
       "length": 23,
       "value": "\"Response-Upload-Image\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "FloatLiteral",
-      "offset": 5177,
+      "offset": 5250,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 6421,
+      "offset": 6494,
       "length": 17,
       "value": "\"Start-initUshur\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 6903,
+      "offset": 6976,
       "length": 66,
       "value": "\"initUshur Response :: \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 6943,
+      "offset": 7016,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 6962,
+      "offset": 7035,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 6968,
+      "offset": 7041,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 7261,
+      "offset": 7334,
       "length": 40,
       "value": "\"initUshur JSON Response :: \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 7300,
+      "offset": 7373,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "FloatLiteral",
-      "offset": 7493,
+      "offset": 7566,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 11550,
+      "offset": 11623,
       "length": 29,
       "value": "\"dd:MM:yy:HH:mm:ss.SSSS:zzzz\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 11624,
+      "offset": 11697,
       "length": 15,
       "value": "\"Timestamp :: \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/RequestClass.swift",
       "kind": "StringLiteral",
-      "offset": 11642,
+      "offset": 11715,
       "length": 4,
       "value": "\"\n\""
     },
@@ -8913,91 +8913,91 @@
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 856,
-      "length": 498,
+      "offset": 899,
+      "length": 602,
       "value": "\"{\n    \"request_id\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 909,
+      "offset": 968,
       "length": 2,
       "value": "\"\",\n    \"message\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 1013,
       "length": 2,
       "value": "\"\",\n    \"path_name\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 1057,
       "length": 2,
       "value": "\"\",\n    \"function_name\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1026,
+      "offset": 1109,
       "length": 2,
       "value": "\"\",\n    \"line_no\": \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1150,
       "length": 1,
       "value": "\",\n    \"process_name\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1199,
       "length": 2,
       "value": "\"\",\n    \"pid\": \""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1273,
       "length": 1,
       "value": "\",\n    \"timestamp\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1327,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 1228,
+      "offset": 1343,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1350,
       "length": 2,
       "value": "\"\",\n    \"logger\": \"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1295,
+      "offset": 1418,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kaushalhebbar\/Library\/CloudStorage\/OneDrive-ushur.com\/KAUSHAL\/Ushur\/INTERNSHIP\/DISA\/POCS\/GOOD_RX\/SDK_PHASE2\/stage2\/iOS_SDK\/UshurSDK\/Helpers\/LoggingUtility.swift",
       "kind": "StringLiteral",
-      "offset": 1298,
+      "offset": 1421,
       "length": 2,
       "value": "\"\",\n    \"severity\": \"DEBUG\"\n}\""
     },
