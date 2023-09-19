@@ -150,7 +150,7 @@ public class Ushur {
     get
     set
   }
-  public init()
+  public init(token: Swift.String)
   public func processDocument(imageDataArray: [Foundation.Data], config: UshurSDK.ConfigsEnum)
   @objc deinit
 }

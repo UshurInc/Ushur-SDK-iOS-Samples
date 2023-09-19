@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         imagePicker.delegate = self
         return imagePicker
     }()
-    var ushur = Ushur()
+    var ushur = Ushur(token: "")
     //MARK: Outlets
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var uploadImageButton: UIButton!
