@@ -150,7 +150,7 @@ public class Ushur {
     get
     set
   }
-  public init(token: Swift.String)
+  public init(token: Swift.String, useEdgeOcr: Swift.Bool = true)
   public func processDocument(imageDataArray: [Foundation.Data], config: UshurSDK.ConfigsEnum)
   @objc deinit
 }
